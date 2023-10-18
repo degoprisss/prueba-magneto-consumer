@@ -1,5 +1,5 @@
+import { MessagePattern, Payload } from "@nestjs/microservices";
 import { Controller } from "@nestjs/common";
-import { Ctx, MessagePattern, Payload, RmqContext } from "@nestjs/microservices";
 import { IConsumer } from "src/application/ports/Interfaces/IConsumer";
 import { IConsumerUseCases } from "src/application/ports/UseCases/IConsumerUseCases";
 
