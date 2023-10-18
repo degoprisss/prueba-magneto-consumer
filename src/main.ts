@@ -3,8 +3,9 @@ import { AppModule } from './app.module';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 
 async function bootstrap() {
-  let host = 'rabbitmq'
-  let port = 5672
+  let host = process.env.RABBITMQ_HOST || 'rabbitmq'
+  let port = process.env.RABBITMQ_PORT || 5672
+  console.log(host, port)
   const app = await NestFactory.createMicroservice<MicroserviceOptions>(AppModule, {
     transport: Transport.RMQ,
     options: {

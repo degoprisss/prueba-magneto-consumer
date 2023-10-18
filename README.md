@@ -26,6 +26,8 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+In this the microservice that receives the data, saves it in mongo and returns the saved information.
+
 ## Installation
 
 ```bash
